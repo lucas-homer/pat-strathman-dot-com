@@ -32,7 +32,6 @@ export default createSchema({
     blockContent,
     blockText,
     category,
-    companyInfo,
     figure,
     mainImage,
     page,
