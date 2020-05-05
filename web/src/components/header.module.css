@@ -4,13 +4,14 @@
 .root {
   position: relative;
   z-index: 100;
+  width: 100%;
+  height: 100px;
 }
 
 .wrapper {
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: 960px;
-  padding: 1em;
+  max-width: 700px;
   display: flex;
 
   @media (--media-min-small) {
@@ -71,7 +72,8 @@
 
   @media (hover: hover) {
     @nest & ul li a:hover {
-      text-decoration: underline;
+      background: #f2f2f2;
+      border-radius: 5px;
     }
   }
 
@@ -109,4 +111,17 @@
 
 .showNav {
   display: block;
+}
+
+.ribbon {
+  z-index: 100;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(
+    to left,
+    hsla(45, 99%, 62%, 1) 0%,
+    hsla(45, 99%, 62%, 0.99) 10%,
+    hsla(273, 59%, 34%, 0.95) 88%,
+    hsla(273, 59%, 34%, 0.94) 100%
+  );
 }
