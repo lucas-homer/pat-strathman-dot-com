@@ -1,14 +1,17 @@
 .hero {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  background: var(--color-white);
+  color: var(--color-black);
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.root {
   width: 100%;
-  height: 100px;
-  vertical-align: top;
-  object-fit: cover;
-
-  z-index: 0;
-
+  padding: 5px;
+  position: relative;
+  border-radius: 10px;
   background: linear-gradient(
     to right,
     hsla(45, 99%, 62%, 1) 0%,
