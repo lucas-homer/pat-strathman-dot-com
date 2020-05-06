@@ -1,5 +1,6 @@
 .hero {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   background: var(--color-white);
   color: var(--color-black);
