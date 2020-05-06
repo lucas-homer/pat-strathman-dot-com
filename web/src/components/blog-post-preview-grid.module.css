@@ -34,6 +34,12 @@
   }
 }
 
+.gridItem {
+  background-color: var(--color-offWhite);
+  border-radius: 5px;
+  box-shadow: 1px 0px 10px -2px var(--color-gray);
+}
+
 .browseMoreNav {
   composes: small from './typography.module.css';
   margin-top: 1rem;
