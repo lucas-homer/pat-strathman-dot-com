@@ -1,0 +1,9 @@
+.container {
+  border-radius: 5px;
+  /* border: 3px solid hsla(273, 59%, 34%, 0.94); */
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 1px 1px 10px 10px #f2f2f2;
+  max-width: 400px;
+}
