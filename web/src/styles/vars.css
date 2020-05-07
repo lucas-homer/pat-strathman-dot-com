@@ -1,5 +1,7 @@
 :root {
   --color-black: #222;
+  --color-primary: hsla(273, 59%, 34%, 0.94);
+  --color-secondary: hsla(45, 99%, 62%, 0.99);
   --color-gray: #999;
   --color-white: #fff;
   --color-offWhite: #f2f2f2;
