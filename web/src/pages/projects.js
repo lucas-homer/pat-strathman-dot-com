@@ -7,7 +7,7 @@ import SEO from '../components/seo'
 import Layout from '../containers/layout'
 import { mapEdgesToNodes, filterOutDocsWithoutSlugs } from '../lib/helpers'
 
-import { responsiveTitle1 } from '../components/typography.module.css'
+import { responsiveTitle1, responsiveTitle4 } from '../components/typography.module.css'
 
 export const query = graphql`
   query ProjectsPageQuery {
@@ -47,7 +47,9 @@ const ProjectsPage = props => {
     <Layout>
       <SEO title='Projects' />
       <Container>
-        <h1 className={responsiveTitle1}>Projects</h1>
+        <h1 className={responsiveTitle1}>Listen to Pat</h1>
+        <h4 className={responsiveTitle4}>Hear the voice of Kansas Wesleyan sports!</h4>
+        {/* TODO: pass audioRecordings data to Listen component */}
         {projectNodes && projectNodes.length > 0 && <ProjectPreviewGrid nodes={projectNodes} />}
       </Container>
     </Layout>
