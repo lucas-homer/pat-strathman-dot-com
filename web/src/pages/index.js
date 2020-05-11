@@ -14,6 +14,12 @@ export const query = graphql`
       title
       description
       keywords
+      mainImage {
+        asset {
+          _id
+        }
+        alt
+      }
     }
 
     projects: allSanityProject(limit: 6, sort: { fields: [publishedAt], order: DESC }) {
@@ -113,13 +119,14 @@ const IndexPage = props => {
       'Missing "Site settings". Open the studio at http://localhost:3333 and add some content to "Site settings" and restart the development server.'
     )
   }
+  console.log(site)
 
   return (
     <Layout>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
       <Container>
         <h1 hidden>Welcome to {site.title}</h1>
-        <LandingHero />
+        <LandingHero heroImage={site.mainImage} description={site.description} />
         {projectNodes && (
           <ProjectPreviewGrid
             title='Latest projects'

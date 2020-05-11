@@ -31,6 +31,11 @@ export default {
       name: 'author',
       title: 'Author',
       type: 'string'
+    },
+    {
+      name: 'mainImage',
+      title: 'Main image',
+      type: 'mainImage',
     }
   ]
 }

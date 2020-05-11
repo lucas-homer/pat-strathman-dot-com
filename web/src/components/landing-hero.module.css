@@ -2,10 +2,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
+
   background: var(--color-white);
   color: var(--color-black);
   padding: 2rem;
   border-radius: 5px;
+}
+.description {
+  padding: 0 2rem;
+}
+.heroImage {
+  max-width: 200px;
 }
 
 .root {
