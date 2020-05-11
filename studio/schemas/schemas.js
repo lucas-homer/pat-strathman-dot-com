@@ -5,10 +5,11 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // We import object and document schemas
+import audioRecording from './audioRecording'
+import audioRecordingMember from './audioRecordingMember'
 import blockContent from './blockContent'
 import blockText from './blockText'
 import category from './category'
-import companyInfo from './companyInfo'
 import figure from './figure'
 import mainImage from './mainImage'
 import page from './page'
@@ -29,6 +30,8 @@ export default createSchema({
   types: schemaTypes.concat([
     // The following are document types which will appear
     // in the studio.
+    audioRecording,
+    audioRecordingMember,
     blockContent,
     blockText,
     category,
